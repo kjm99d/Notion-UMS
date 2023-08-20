@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notion_UMS.NotionDB
+namespace libNotionUMSCore.NotionDatabase
 {
     
-    internal class Writer
+    public class Writer
     {
         private Dao m_Dao;
         public Writer(string strDatabaseAccessToken, string strDatabaseId)

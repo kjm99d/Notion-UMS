@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notion_UMS.NotionDB
+namespace libNotionUMSCore.NotionDatabase
 {
-    internal class Reader
+    public class Reader
     {
         private Dao m_Dao;
         public Reader(string strDatabaseAccessToken, string strDatabaseId) 

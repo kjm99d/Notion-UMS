@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notion-UMS", "Notion-UMS.csproj", "{4C7C034B-7ACF-4D50-9BC7-DC942B32EB37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libNotionUMSCore", "libNotionUMSCore\libNotionUMSCore.csproj", "{4E3F399F-B9C1-4DF4-AB03-848F7EA6372A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notion-UMS", "NotionUMS\Notion-UMS.csproj", "{F2DE4097-52D4-42CB-99B9-58B4282F3C98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C7C034B-7ACF-4D50-9BC7-DC942B32EB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C7C034B-7ACF-4D50-9BC7-DC942B32EB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C7C034B-7ACF-4D50-9BC7-DC942B32EB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C7C034B-7ACF-4D50-9BC7-DC942B32EB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3F399F-B9C1-4DF4-AB03-848F7EA6372A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3F399F-B9C1-4DF4-AB03-848F7EA6372A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3F399F-B9C1-4DF4-AB03-848F7EA6372A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3F399F-B9C1-4DF4-AB03-848F7EA6372A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DE4097-52D4-42CB-99B9-58B4282F3C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DE4097-52D4-42CB-99B9-58B4282F3C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DE4097-52D4-42CB-99B9-58B4282F3C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DE4097-52D4-42CB-99B9-58B4282F3C98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
+using libNotionUMSCore.NotionDatabase;
 using Notion.Client;
-using Notion_UMS.NotionDB;
 using System.Globalization;
 
 namespace Notion_UMS
@@ -32,9 +32,9 @@ namespace Notion_UMS
         {
             string strTitle = tbDbWriteTitle.Text;
 
-            // 읽기 권한이 존재하는 토큰의 이름을 작성합니다.
+            // 쓰기 권한이 존재하는 토큰의 이름을 작성합니다.
             const string strAccessToken = "secret_47vpvOh5Je5UX9ateIiuUAQOGzZyJcFVzBz1vXAflLy";
-            // 읽기 권한이 부여된 데이터베이스의 ID 정보를 작성합니다.
+            // 쓰기 권한이 부여된 데이터베이스의 ID 정보를 작성합니다.
             const string strDatabaseId = "eb31dbd4a4c4418185d015b7b84119ea";
 
             Dao dao = new Dao(strAccessToken, strDatabaseId);

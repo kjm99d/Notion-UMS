@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Notion.Net" Version="4.1.0" />
+    <ProjectReference Include="..\libNotionUMSCore\libNotionUMSCore.csproj" />
   </ItemGroup>
 
 </Project>

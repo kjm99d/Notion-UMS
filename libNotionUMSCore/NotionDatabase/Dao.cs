@@ -9,11 +9,11 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notion_UMS.NotionDB
+namespace libNotionUMSCore.NotionDatabase
 {
-    internal class Dao
+    public class Dao
     {
-        private string m_strDatabaseAccessToken; // 데잍처베이스 접근(읽기/쓰기) 권한이 있는 토큰
+        private string m_strDatabaseAccessToken; // 데이터베이스 접근(읽기/쓰기) 권한이 있는 토큰
         private string m_strDatabaseId;          // 연결될 DB ID
         private NotionClient m_connector;
 
