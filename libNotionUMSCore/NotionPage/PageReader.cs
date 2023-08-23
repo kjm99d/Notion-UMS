@@ -79,9 +79,13 @@ namespace libNotionUMSCore.NotionPage
                 {
                     case BlockType.Paragraph:
                         var paragraphBlock = block as ParagraphBlock;
-                        var text = paragraphBlock.Paragraph.RichText.First().PlainText;
-                        content += text;
-                        content += Environment.NewLine;
+                        var RichText = paragraphBlock.Paragraph.RichText;
+                        if (RichText.Count() > 0)
+                        {
+                            var text = paragraphBlock.Paragraph.RichText.First().PlainText;
+                            content += text;
+                            content += Environment.NewLine;
+                        }
                         break;
                     // 다른 block 타입에 대한 처리 추가 가능
                     default:
