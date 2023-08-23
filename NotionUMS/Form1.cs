@@ -1,4 +1,5 @@
 using libNotionUMSCore.NotionDatabase;
+using libNotionUMSCore.NotionPage;
 using Notion.Client;
 using System.Globalization;
 
@@ -40,12 +41,21 @@ namespace Notion_UMS
             Dao dao = new Dao(strAccessToken, strDatabaseId);
             dao.Connect();
 
-            var item =  new Dictionary<string, PropertyValue>
+            var item = new Dictionary<string, PropertyValue>
             {
                 { "¿Ã∏ß", new TitlePropertyValue { Title = new List<RichTextBase> { new RichTextText { Text = new Text { Content = strTitle } } } } }
             };
 
             await dao.Create(item);
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            // https://www.notion.so/5e6ff2f01bce4ecbacf88d5e9aabe9b9?pvs=4
+            PageReader reader = new PageReader("secret_9xdmwha3nDmrvt9Y510wqZMYZPNtObp4FSnxFvXvYkh", "5e6ff2f01bce4ecbacf88d5e9aabe9b9");
+            reader.Connect();
+            string strContent = await reader.ReadPageContent();
+            MessageBox.Show(strContent);
         }
     }
 }

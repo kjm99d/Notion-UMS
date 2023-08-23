@@ -31,6 +31,7 @@
             button1 = new Button();
             button2 = new Button();
             tbDbWriteTitle = new TextBox();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -64,11 +65,22 @@
             tbDbWriteTitle.TabIndex = 2;
             tbDbWriteTitle.TextAlign = HorizontalAlignment.Center;
             // 
+            // button3
+            // 
+            button3.Location = new Point(19, 257);
+            button3.Name = "button3";
+            button3.Size = new Size(252, 34);
+            button3.TabIndex = 3;
+            button3.Text = "페이지 내용 불러오기";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1143, 750);
+            Controls.Add(button3);
             Controls.Add(tbDbWriteTitle);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -84,5 +96,6 @@
         private Button button1;
         private Button button2;
         private TextBox tbDbWriteTitle;
+        private Button button3;
     }
 }
